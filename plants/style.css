@@ -1,3 +1,143 @@
+:root {
+  --bg-color: #EDF2EC;
+  --light-color: #FFFFFF;
+  --link-color: #010201;
+  --highlight-color: #499A18;
+  --primary-color: #E06733;
+  --heading-color: #717171;
+  --text-color: #636060;
+
+  --content-width: 1440px;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Inika', serif;
+}
+
 h1 {
-    margin: 10px 0px 10px 0px;
-  }
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5.0rem;
+  color: var(--heading-color);
+}
+
+h2 {
+  font-family: 'Inika',  sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.0rem;
+  line-height: 5.2rem;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 3.5rem;
+  color: var(--text-color);
+}
+
+.logo{
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.wrapper{
+  max-width: var(--content-width);
+  margin: auto;
+}
+
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 134px;
+}
+
+.home-wrapper{
+  display: flex;
+  align-items: center;
+  height: 532px;
+}
+
+.home-content{
+  display: flex;
+  width: calc(var(--content-width)/2);
+  height: 400px;
+  flex-wrap: wrap;
+}
+
+.home-content span {
+  color: var(--highlight-color);
+}
+
+.layout-3-column{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.layout-3-column ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.navigation{
+  display: flex;
+  list-style: none;
+}
+
+.navigation-link{
+  display: flex;
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 0 50px 0 50px;
+}
+
+.footer-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 134px;
+}
+
+.header{
+  background-color: var(--bg-color);
+}
+
+.home{
+  background-color: var(--bg-color);
+}
+
+.about-us{
+  background-color: var(--light-color);
+}
+
+.service{
+  background-color: var(--bg-color);
+}
+
+.prices{
+  background-color: var(--light-color);
+}
+
+.contact-us{
+  background-color: var(--bg-color);
+}
+
+.footer{
+  background-color: var(--light-color);
+}
