@@ -19,29 +19,29 @@
         </a>
         <nav class="header-navigation">
           <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Service</li>
-            <li>Price</li>
-            <li>Contacts</li>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#prices">Price</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="welcome">
+      <section class="welcome" id="welcome">
         <div class="wrapper welcome-wrapper">  
           <img src="./img/general/leafs_home.png" alt="leafs">
           <div class="welcome-content">
             <h1>We grow <span>plants</span> and give you oxygen</h1> 
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             <form class="welcome-button">
-              <button>LEARN MORE</button>
+              <button type="button">LEARN MORE</button>
             </form>
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="wrapper about-wrapper">
           <div class="about-content">
             <h2>We are <span>professional experienced</span> gardeners</h2>
@@ -50,14 +50,16 @@
           <img src="./img/general/houseplant.png" alt="houseplant">
         </div>       
       </section>
-      <section class="service">
+      <section class="service" id="service">
         <div class="wrapper service-wrapper">
           <div class="service-head">
             <h2>Service and our projects</h2>
-            <div class="service-block-tag">
-              <span class="service-tag">Gardens</span>
-              <span class="service-tag">Lawn</span>
-              <span class="service-tag">Planting</span>
+            <div>
+              <form class="service-block-button">
+              <button type="button">Gardens</button>
+              <button type="button">Lawn</button>
+              <button type="button">Planting</button>
+              </form>
             </div>
           </div>
           <div class="service-block-card">
@@ -106,26 +108,26 @@
           </div>
         </div>
       </section>
-      <section class="prices">
+      <section class="prices" id="prices">
         <div class="wrapper prices-wrapper">
           <div>
             <h2>Prices</h2>
             <form class="prices-block-button">
-              <button class="prices-button">Basics</button>
-              <button class="prices-button">Standard</button>
-              <button class="prices-button">Pro care</button>
+              <button class="prices-button" type="button">Basics</button>
+              <button class="prices-button" type="button">Standard</button>
+              <button class="prices-button" type="button">Pro care</button>
             </form>
           </div>
           <div class="prices-content">
             <p>Our best <span>gardeners</span> are ready to help you</p>
             <form>
-              <button>Contact us</button>
+              <button type="button">Contact us</button>
             </form>
             <img src="./img/general/leafs_price.png" alt="leafs">
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="wrapper contacts-wrapper">
           <img src="./img/general/contact_woman.png" alt="women">
           <h2>Contact us</h2>
@@ -149,10 +151,10 @@
           </div>
           <a href="https://rs.school/js-stag0/">Rolling Scopes School</a>
           <ul>
-            <li><img src="./img/icons/inst.svg" alt="instagram"></li>
-            <li><img src="./img/icons/fb.svg" alt="facebook"></li>
-            <li><img src="./img/icons/tw.svg" alt="twitter"></li>
-            <li><img src="./img/icons/pinterest.svg" alt="pinterest"></li>
+            <li><a href="https://en.wikipedia.org/wiki/Instagram"><img src="./img/icons/inst.svg" alt="instagram"></a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Facebook"><img src="./img/icons/fb.svg" alt="facebook"></a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Twitter"><img src="./img/icons/tw.svg" alt="twitter"></a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Pinterest"><img src="./img/icons/pinterest.svg" alt="pinterest"></a></li>
           </ul>
         </div>
     </footer>
