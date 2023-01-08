@@ -9,12 +9,14 @@
   --form-color: #D6E7D2;
   --dark-color: #000000;
   --border-color: #E3E1D5;
+  --active-selector-color: #C1E698;
 
   --content-width: 1440px;
 }
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,17 +25,8 @@ body {
   margin: 0px;
 }
 
-h1 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 4.5rem;
-  line-height: 5.0rem;
-  color: var(--heading-color);
-}
-
 h2 {
-  font-family: 'Inika',  sans-serif;;
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 4.0rem;
@@ -91,8 +84,8 @@ p {
   padding: 0 109px 0 109px;
 }
 
-.header a{
-  font-family: 'Inika';
+.header-logo {
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -102,26 +95,40 @@ p {
   padding: 0 0 8px 0;
 }
 
+.header-logo:hover {
+  transform: scale(1.2);
+  transition: 300ms ease-in-out;
+}
+
 .header-navigation ul{
   display: flex;
   list-style: none;
 }
 
 .header-navigation li{
+  margin: 0 0 0 47px;
+}
+
+.header-navigation li a{
   list-style: none;
   font-size: 1.6rem;
-  padding: 0 0px 0 47px;
-  font-family: 'Inika';
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 5.0rem;
+  text-decoration: none;
+  color: var(--dark-color);
 }
 
-.header-navigation li:first-child{
+.header-navigation li:hover {
+  transform: scale(1.2);
+  transition: 300ms ease-in-out;
+}
+
+.header-navigation li:first-child a{
   list-style: none;
   font-size: 1.6rem;
-  padding: 0 0px 0 46px;
   font-weight: 700;
   color: var(--primary-color);
 }
@@ -157,7 +164,7 @@ p {
 }
 
 .welcome-content p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.0rem;
@@ -171,7 +178,7 @@ p {
 }
 
 .welcome button {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -180,10 +187,21 @@ p {
   width: 158px;
   border-radius: 10px;
   background-color: var(--bg-color);
-  border: solid 1px var(--primary-color);
+  border: solid 2px var(--primary-color);
   color: var(--dark-color);
   cursor: pointer;
 }
+
+.welcome button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  transition: 300ms;
+}
+  
+.welcome button:focus {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+} 
 
 .about-wrapper {
   display: flex;
@@ -194,7 +212,7 @@ p {
 }
 
 .about p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.0rem;
@@ -203,7 +221,7 @@ p {
 }
 
 .about h2 {
-  font-family: 'Inika';
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 4.0rem;
@@ -232,7 +250,7 @@ p {
 
 .service-wrapper {
   width: 1222px;
-  padding: 0px 109px 121px 109px;
+  padding: 0 109px 121px 109px;
 }
 
 .service-head {
@@ -245,7 +263,7 @@ p {
 }
 
 .service-head h2 {
-  font-family: 'Inika';
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 4.0rem;
@@ -253,13 +271,13 @@ p {
   color: var(--highlight-color);
 }
 
-.service-block-tag {
+.service-block-button {
   display: flex;
 }
 
-.service-tag {
+.service-block-button button {
   box-sizing: border-box;
-  font-family: 'Inika';
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.0rem;
@@ -273,7 +291,17 @@ p {
   width: 161px;
   margin: 3px 0 0 39px;
   cursor: pointer; 
-  padding: 12px 0 12px 0;
+}
+
+.service-block-button button:hover {
+background-color: var(--primary-color);
+color: var(--light-color);
+transition: 300ms;
+}
+
+.service-block-button button:focus {
+  background-color: var(--primary-color);
+  color: var(--light-color);
 }
 
 .service-block-card {
@@ -305,7 +333,7 @@ p {
 }
 
 .service-card h3 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.0rem;
@@ -315,7 +343,7 @@ p {
 }
 
 .service-card p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -333,7 +361,7 @@ p {
 }
 
 .prices h2 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 4.8rem;
@@ -341,7 +369,7 @@ p {
 }
 
 .prices p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 4.0rem;
@@ -375,7 +403,7 @@ p {
   background-color: var(--bg-color);
   border-radius: 20px;
   padding: 0 0 0 40px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.0rem;
@@ -385,13 +413,18 @@ p {
   cursor: pointer; 
 }
 
+.prices-button:hover {
+  transition: 300ms ease-in-out;
+  box-shadow: var(--active-selector-color) 0 0 10px 5px;
+}
+
 .prices-button::after {
   position: absolute;
   right: 35px;
   content: url(./img/icons/accordion_btn_light.svg);
   width: 16px;
   height: 16px;
-  margin: 0px 0px 0px 0;
+  margin: 0 0 0 0;
 }
 
 .prices-content {
@@ -405,7 +438,7 @@ p {
 
 .prices-content button {
   box-sizing: border-box;
-  font-family: 'Inika';
+  font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.0rem;
@@ -417,6 +450,17 @@ p {
   border: solid 1px var(--primary-color);
   color: var(--primary-color);
   cursor: pointer;
+}
+
+.prices-content button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  transition: 300ms;
+}
+  
+.prices-content button:focus {
+  background-color: var(--primary-color);
+  color: var(--light-color);
 }
 
 .prices-content img{
@@ -448,7 +492,7 @@ p {
   padding: 148px 0 0 0;
 }
 
-.contacts-city select{
+.contacts-city select {
   box-sizing: border-box;
   background-color: var(--form-color);
   border: none;
@@ -456,7 +500,7 @@ p {
   width: 450px;
   height: 50px;
   padding: 0 0 0 20px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.0rem;
@@ -467,23 +511,36 @@ p {
   cursor: pointer;
 }
 
+.contacts-city select:hover {
+  background-color: var(--active-selector-color);
+  transition: 300ms;
+}
+  
+.contacts-city select:focus {
+  background-color: var(--active-selector-color);
+}
+
 .contacts-city::after {
   position: absolute;
   right: 35px;
   content: url(./img/icons/accordion_btn.svg);
   width: 16px;
   height: 16px;
-  margin: 17px 0px 17px 0;
+  margin: 17px 0 17px 0;
 }
 
 .footer a, .footer p {
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.0rem;
   line-height: 5.0rem;
   color: var(--dark-color);
+}
+
+.footer ul a {
+  line-height: 0.0rem;
 }
 
 .footer-wrapper {
@@ -501,14 +558,14 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 188px;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
   padding: 0 0 0 12px;
 }
 
 .footer-rights {
   display: flex;
   align-items: center;
-  padding: 0 33px 0 0px;
+  padding: 0 33px 0 0;
 }
 
 .footer-rights :nth-child(2) {
