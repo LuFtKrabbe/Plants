@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./img/general/houseplant.png"/>
+    <link rel="icon" type="image/png" href="./img/general/houseplant.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,16 @@
   <body>
     <header class="header">
       <div class="wrapper header-wrapper">
-        <a href="#" class="logo">Plants</a> <!--For logo's link in future-->
+        <a href="#" class="header-logo">
+          <img src="./img/icons/logo.svg" alt="logo">Plants
+        </a>
         <nav class="header-navigation">
-          <ul class="navigation">
-            <li class="navigation-link">Home</li>
-            <li class="navigation-link">About us</li>
-            <li class="navigation-link">Service</li>
-            <li class="navigation-link">Price</li>
-            <li class="navigation-link">Contacts</li>
+          <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Service</li>
+            <li>Price</li>
+            <li>Contacts</li>
           </ul>
         </nav>
       </div>
@@ -42,7 +44,7 @@
       <section class="about">
         <div class="wrapper about-wrapper">
           <div class="about-content">
-            <h2>We are professional experienced gardeners</h2>
+            <h2>We are <span>professional experienced</span> gardeners</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           </div>
           <img src="./img/general/houseplant.png" alt="houseplant">
@@ -52,42 +54,54 @@
         <div class="wrapper service-wrapper">
           <div class="service-head">
             <h2>Service and our projects</h2>
-            <form class="service-tags">
-              <button class="tag">Gardens</button>
-              <button class="tag">Law</button>
-              <button class="tag">Planting</button>
-            </form>
+            <div class="service-block-tag">
+              <span class="service-tag">Gardens</span>
+              <span class="service-tag">Lawn</span>
+              <span class="service-tag">Planting</span>
+            </div>
           </div>
-          <div class="service-blocks">
-            <div class="service-block">
+          <div class="service-block-card">
+            <div class="service-card">
               <img src="./img/service/1.png" alt="1">
-              <h3>Garden care</h3>
-              <p>Lorem Ipsum has been the industry</p>
+              <div>
+                <h3>Garden care</h3>
+                <p>Lorem Ipsum has been the industry</p>
+              </div>
             </div>
-            <div class="service-block">
+            <div class="service-card">
               <img src="./img/service/2.png" alt="2">
-              <h3>Planting</h3>
-              <p>Lorem Ipsum has been the industry</p>
+              <div>
+                <h3>Planting</h3>
+                <p>Lorem Ipsum has been the industry</p>
+              </div>
             </div>
-            <div class="service-block">
+            <div class="service-card">
               <img src="./img/service/3.png" alt="3">
-              <h3>Lawn care</h3>
-              <p>Lorem Ipsum has been the industry</p>
+              <div>
+                <h3>Lawn care</h3>
+                <p>Lorem Ipsum has been the industry</p>
+              </div>
             </div>
-            <div class="service-block">
+            <div class="service-card">
               <img src="./img/service/4.png" alt="4">
-              <h3>Planting</h3>
-              <p>Lorem Ipsum has been the industry</p>
+              <div>
+                <h3>Planting</h3>
+                <p>Lorem Ipsum has been the industry</p>
+              </div>
             </div>
-            <div class="service-block">
+            <div class="service-card">
               <img src="./img/service/5.png" alt="5">
-              <h3>Garden care</h3>
-              <p>Lorem Ipsum has been the industry</p>
+              <div>
+                <h3>Garden care</h3>
+                <p>Lorem Ipsum has been the industry</p>
+              </div>
             </div>
-            <div class="service-block">
+            <div class="service-card">
               <img src="./img/service/6.png" alt="6">
-              <h3>Planting</h3>
-              <p>Lorem Ipsum has been the industry</p>
+              <div>
+                <h3>Planting</h3>
+                <p>Lorem Ipsum has been the industry</p>
+              </div>
             </div>
           </div>
         </div>
@@ -96,14 +110,14 @@
         <div class="wrapper prices-wrapper">
           <div>
             <h2>Prices</h2>
-            <form class="prices-buttons">
-              <button class="button">Basics</button>
-              <button class="button">Standard</button>
-              <button class="button">Pro care</button>
+            <form class="prices-block-button">
+              <button class="prices-button">Basics</button>
+              <button class="prices-button">Standard</button>
+              <button class="prices-button">Pro care</button>
             </form>
           </div>
           <div class="prices-content">
-            <h2>Our best gardeners are ready to help you</h2>
+            <p>Our best <span>gardeners</span> are ready to help you</p>
             <form>
               <button>Contact us</button>
             </form>
@@ -116,9 +130,11 @@
           <img src="./img/general/contact_woman.png" alt="women">
           <h2>Contact us</h2>
           <div class="contacts-city">
-            <select > 
+            <select> 
               <option value="0">City</option>
               <option value="1">California</option>
+              <option value="2">New York</option>
+              <option value="3">Philadelphia</option>
             </select>
           </div>
         </div>
@@ -127,12 +143,12 @@
     <footer class="footer">
       <div class="wrapper footer-wrapper">
           <div class="footer-rights">
-            <p>&COPY</p>
+            <p>&#169;</p>
             <p>2022</p>
-            <p>github</p>
+            <a href="https://github.com/LuFtKrabbe">github</a>
           </div>
-          <p>Rolling Scopes School<p>
-          <ul class="social-links">
+          <a href="https://rs.school/js-stag0/">Rolling Scopes School</a>
+          <ul>
             <li><img src="./img/icons/inst.svg" alt="instagram"></li>
             <li><img src="./img/icons/fb.svg" alt="facebook"></li>
             <li><img src="./img/icons/tw.svg" alt="twitter"></li>
