@@ -10,7 +10,6 @@
   --dark-color: #000000;
   --border-color: #E3E1D5;
   --active-selector-color: #C1E698;
-
   --content-width: 1440px;
 }
 
@@ -21,23 +20,23 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Inika', serif;
+  font-family: "Inika", serif;
   margin: 0px;
 }
 
 h2 {
-  font-family: 'Inika', serif;
+  font-family: "Inika", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 4.0rem;
+  font-size: 4rem;
   line-height: 5.2rem;
 }
 
 p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 3.5rem;
   color: var(--text-color);
 }
@@ -85,7 +84,7 @@ p {
 }
 
 .header-logo {
-  font-family: 'Inika', serif;
+  font-family: "Inika", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -100,23 +99,23 @@ p {
   transition: 300ms ease-in-out;
 }
 
-.header-navigation ul{
+.header-navigation ul {
   display: flex;
   list-style: none;
 }
 
-.header-navigation li{
+.header-navigation li {
   margin: 0 0 0 47px;
 }
 
-.header-navigation li a{
+.header-navigation li a {
   list-style: none;
   font-size: 1.6rem;
-  font-family: 'Inika', serif;
+  font-family: "Inika", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 5.0rem;
+  line-height: 5rem;
   text-decoration: none;
   color: var(--dark-color);
 }
@@ -126,7 +125,7 @@ p {
   transition: 300ms ease-in-out;
 }
 
-.header-navigation li:first-child a{
+.header-navigation li:first-child a {
   list-style: none;
   font-size: 1.6rem;
   font-weight: 700;
@@ -154,20 +153,20 @@ p {
 }
 
 .welcome-content h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 4.5rem;
-  line-height: 5.0rem;
+  line-height: 5rem;
   color: var(--heading-color);
   margin: 0;
 }
 
 .welcome-content p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 3.5rem;
   margin: 0;
   padding: 46px 25px 47px 0;
@@ -178,11 +177,11 @@ p {
 }
 
 .welcome button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 2.0rem;
+  line-height: 2rem;
   height: 44px;
   width: 158px;
   border-radius: 10px;
@@ -197,11 +196,11 @@ p {
   color: var(--light-color);
   transition: 300ms;
 }
-  
+
 .welcome button:focus {
   background-color: var(--primary-color);
   color: var(--light-color);
-} 
+}
 
 .about-wrapper {
   display: flex;
@@ -212,29 +211,28 @@ p {
 }
 
 .about p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.0rem;
-  line-height: 3.0rem;
+  font-size: 2rem;
+  line-height: 3rem;
   margin: 0;
 }
 
 .about h2 {
-  font-family: 'Inika', serif;
+  font-family: "Inika", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 4.0rem;
+  font-size: 4rem;
   line-height: 5.2rem;
   color: var(--highlight-color);
   margin: 3px 0 37px 0;
   padding: 0 150px 0 0;
 }
 
-.about h2 span{
+.about h2 span {
   color: var(--primary-color);
 }
-
 
 .about img {
   width: 464px;
@@ -263,10 +261,10 @@ p {
 }
 
 .service-head h2 {
-  font-family: 'Inika', serif;
+  font-family: "Inika", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 4.0rem;
+  font-size: 4rem;
   line-height: 5.2rem;
   color: var(--highlight-color);
 }
@@ -277,10 +275,10 @@ p {
 
 .service-block-button button {
   box-sizing: border-box;
-  font-family: 'Inika', serif;
+  font-family: "Inika", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 2.6rem;
   border-radius: 5px;
   text-align: center;
@@ -290,13 +288,13 @@ p {
   height: 50px;
   width: 161px;
   margin: 3px 0 0 39px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .service-block-button button:hover {
-background-color: var(--primary-color);
-color: var(--light-color);
-transition: 300ms;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  transition: 300ms;
 }
 
 .service-block-button button:focus {
@@ -308,7 +306,7 @@ transition: 300ms;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between; 
+  align-content: space-between;
   align-items: center;
   height: 955px;
 }
@@ -321,7 +319,7 @@ transition: 300ms;
   align-items: center;
 }
 
-.service-card div{
+.service-card div {
   box-sizing: border-box;
   border: 1px solid var(--border-color);
   border-radius: 0 0 20px 20px;
@@ -333,21 +331,21 @@ transition: 300ms;
 }
 
 .service-card h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.0rem;
-  line-height: 2.0rem;
+  font-size: 2rem;
+  line-height: 2rem;
   color: var(--primary-color);
   margin: 10px 0 10px 0;
 }
 
 .service-card p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 2.0rem;
+  line-height: 2rem;
   color: var(--heading-color);
   margin: 3px 0 0 0;
 }
@@ -361,7 +359,7 @@ transition: 300ms;
 }
 
 .prices h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 4.8rem;
@@ -369,17 +367,17 @@ transition: 300ms;
 }
 
 .prices p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 4.0rem;
-  line-height: 5.0rem;
+  font-size: 4rem;
+  line-height: 5rem;
   text-align: right;
   color: var(--dark-color);
   margin: 0 0 38px 0;
 }
 
-.prices p span{
+.prices p span {
   color: var(--highlight-color);
 }
 
@@ -403,14 +401,14 @@ transition: 300ms;
   background-color: var(--bg-color);
   border-radius: 20px;
   padding: 0 0 0 40px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.0rem;
-  line-height: 2.0rem;
+  font-size: 2rem;
+  line-height: 2rem;
   height: 50px;
   width: 250px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .prices-button:hover {
@@ -438,10 +436,10 @@ transition: 300ms;
 
 .prices-content button {
   box-sizing: border-box;
-  font-family: 'Inika', serif;
+  font-family: "Inika", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 2.6rem;
   height: 50px;
   width: 162px;
@@ -457,13 +455,13 @@ transition: 300ms;
   color: var(--light-color);
   transition: 300ms;
 }
-  
+
 .prices-content button:focus {
   background-color: var(--primary-color);
   color: var(--light-color);
 }
 
-.prices-content img{
+.prices-content img {
   height: 183px;
   width: 158px;
   margin: 36px 0 0 0;
@@ -500,11 +498,11 @@ transition: 300ms;
   width: 450px;
   height: 50px;
   padding: 0 0 0 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.0rem;
-  line-height: 4.0rem;
+  font-size: 2rem;
+  line-height: 4rem;
   letter-spacing: 0.05em;
   color: var(--heading-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -515,7 +513,7 @@ transition: 300ms;
   background-color: var(--active-selector-color);
   transition: 300ms;
 }
-  
+
 .contacts-city select:focus {
   background-color: var(--active-selector-color);
 }
@@ -531,16 +529,16 @@ transition: 300ms;
 
 .footer a, .footer p {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.0rem;
-  line-height: 5.0rem;
+  font-size: 2rem;
+  line-height: 5rem;
   color: var(--dark-color);
 }
 
 .footer ul a {
-  line-height: 0.0rem;
+  line-height: 0rem;
 }
 
 .footer-wrapper {
@@ -569,5 +567,7 @@ transition: 300ms;
 }
 
 .footer-rights :nth-child(2) {
-padding: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
+
+/*# sourceMappingURL=style.css.map */
