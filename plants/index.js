@@ -1,1 +1,7 @@
-console.log('Self-estimation of work:\nScore: 110 / 110\n- [x] Valid Layout: document checking completed. No errors or warnings to show. (10/10);\n- [x] Semantic layout: all required elements are completed (20/20);\n- [x] Layout completely according to the sketch (48/48);\n- [x] CSS requirements: implemented with CSS Flex, icons and images in correct format (12/12);\n- [x] Smooth scrolling and animation for some elements have been added (20/20).');
+console.log(`Self-estimation of work:\n
+Score: -- / --\n
+- [x] Score 1 (0/--);\n
+- [x] Score 2 (0/--);\n
+- [x] Score 3 (0/--);\n
+- [x] Score 4 (0/--);\n
+- [x] Score 5 (0/--)`);

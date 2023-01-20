@@ -1,0 +1,41 @@
+.footer {
+    background-color: $light-color;
+} 
+  
+.footer a, .footer p {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    @include font(2.0rem, 5.0rem, 400, normal);
+    color: $dark-color;
+}
+  
+.footer ul a {
+    line-height: 0.0rem;
+}
+  
+.footer-wrapper {
+    @include flex (flex, center, space-between);
+    height: 130px;
+    width: 1222px;
+    padding: 0 109px 0 109px;
+}
+  
+.footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 188px;
+    padding-inline-start: 0;
+    padding: 0 0 0 12px;
+}
+  
+.footer-rights {
+    display: flex;
+    align-items: center;
+    padding: 0 33px 0 0;
+}
+  
+.footer-rights :nth-child(2) {
+  padding: 0 20px 0 20px;
+}

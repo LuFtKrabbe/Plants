@@ -1,0 +1,33 @@
+.contacts {
+    background-color: $bg-color;
+}
+
+.contacts-wrapper {
+    @include flex (flex, flex-start, space-between);
+    width: 1222px;
+    padding: 0 109px 0 109px;
+}
+  
+.contacts img {
+    margin: 53px 50px 0 0;
+}
+  
+.contacts h2 {
+    color: $highlight-color;
+    font-weight: 700;
+    margin: 60px 0 0 0;
+}
+  
+.contacts-city {
+    position: relative;
+    padding: 148px 0 0 0;
+}
+  
+.contacts-city::after {
+    position: absolute;
+    right: 35px;
+    content: url(./img/icons/accordion_btn.svg);
+    width: 16px;
+    height: 16px;
+    margin: 17px 0 17px 0;
+}

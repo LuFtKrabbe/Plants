@@ -1,0 +1,36 @@
+.about {
+    background-color: $light-color;
+}
+
+.about-wrapper {
+    @include flex (flex, center, space-between);
+    width: 1222px;
+    padding: 93px 109px 94px 109px;
+}
+  
+.about p {
+    font-family: 'Inter', sans-serif;
+    @include font(2.0rem, 3.0rem, 400, normal);
+    margin: 0 0 20px 0;
+}
+  
+.about h2 {
+    color: $highlight-color;
+    margin: 0 0 40px 0;
+    padding: 0 150px 0 0;
+    & span{
+        color: $primary-color;
+    }
+}
+  
+.about img {
+    width: 460px;
+    height: 480px;
+}
+  
+.about-content {
+    display: flex;
+    width: 605px;
+    height: 350px;
+    flex-wrap: wrap;
+}

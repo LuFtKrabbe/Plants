@@ -1,0 +1,65 @@
+.service {
+    background-color: $bg-color;
+}
+
+.service-wrapper {
+    width: 1222px;
+    padding: 0 109px 121px 109px;
+}
+  
+.service-head {
+    @include flex (flex, center, space-between);
+    width: 1007px;
+    height: 94px;
+    padding: 45px 0 85px 0;
+}
+  
+.service-head h2 {
+    font-family: 'Inika', serif;
+    @include font(4.0rem, 5.2rem, 400, normal);
+    color: $highlight-color;
+}
+  
+.service-block-button {
+    display: flex;
+}
+  
+.service .button-type1 {
+    box-sizing: border-box;
+    font-family: 'Inika', serif;
+    @include font(2.0rem, 2.6rem, 400, normal);
+    @include button_size (161px, 50px, 5px);
+    margin: 3px 0 0 39px;
+}
+  
+.service-block-card {
+    @include flex (flex, center, space-between, wrap);
+    align-content: space-between; 
+    height: 955px;
+}
+  
+.service-card {
+    box-sizing: border-box;
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.service-card div{
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    width: 330px;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.service-card p {
+    font-family: 'Inter', sans-serif;
+    @include font(1.6rem, 2.0rem, 400, normal);
+    color: $heading-color;
+    margin: 3px 0 0 0;
+}

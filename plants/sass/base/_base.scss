@@ -1,0 +1,29 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    min-width: $content-width;
+}
+  
+body {
+    font-size: 1.6rem;
+    font-family: 'Inika', serif;
+    margin: 0px;
+}
+  
+h2 {
+    font-family: 'Inika', serif;
+    @include font(4.0rem, 5.2rem, 400, normal);
+}
+  
+h3 {
+    font-family: 'Inter', sans-serif;
+    @include font(2.0rem, 2.0rem, 700, normal);
+    color: $primary-color;
+    margin: 10px 0 10px 0;
+}
+  
+p {
+    font-family: 'Inter', sans-serif;
+    @include font(2.0rem, 3.5rem, 400, normal);
+    color: $text-color;
+}
