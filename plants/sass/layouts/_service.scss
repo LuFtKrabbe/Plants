@@ -3,25 +3,45 @@
 }
 
 .service-wrapper {
-    width: 1222px;
-    padding: 0 109px 121px 109px;
+    padding: 0 0 68px 0;
+        @include media-tablet {
+            padding: 0 0 30px 0;
+        }
+        @include media-mobile-big {
+            padding: 0 0 26px 0;
+        }
 }
   
 .service-head {
-    @include flex (flex, center, space-between);
-    width: 1007px;
-    height: 94px;
-    padding: 45px 0 85px 0;
+    @include flex (flex, center, space-between, wrap);
+    padding: 40px 0 80px 0;
+    max-width: 1045px;
+        @include media-tablet {
+            padding: 60px 0 30px 0; 
+        }
+        @include media-mobile-big {
+            padding: 30px 0 0px 0; 
+        }
 }
   
 .service-head h2 {
     font-family: 'Inika', serif;
     @include font(4.0rem, 5.2rem, 400, normal);
     color: $highlight-color;
+    margin: 0 20px 0 0;
+        @include media-tablet {
+            @include font(3.5rem, 4.6rem, 400, normal);
+            margin: 0 20px 35px 0;
+        }
+        @include media-mobile-big {
+            @include font(2.5rem, 3.3rem, 400, normal);
+            margin: 0 20px 34px 0;
+        }
 }
   
 .service-block-button {
     display: flex;
+    flex-wrap: wrap;
 }
   
 .service .button-type1 {
@@ -29,13 +49,26 @@
     font-family: 'Inika', serif;
     @include font(2.0rem, 2.6rem, 400, normal);
     @include button_size (161px, 50px, 5px);
-    margin: 3px 0 0 39px;
+    margin: 9px 38px 9px 0;
+        @include media-tablet {
+            margin: 9px 38px 9px 0;
+        }
+        @include media-mobile-big {
+            @include font(1.5rem, 2.0rem, 400, normal);
+            @include button_size (121px, 35px, 5px);
+            margin: 5px 10px 5px 0;
+        }
 }
   
 .service-block-card {
     @include flex (flex, center, space-between, wrap);
-    align-content: space-between; 
-    height: 955px;
+    align-content: space-between;
+        @include media-correct-I {
+            justify-content: space-around;
+        }
+        @include media-mobile-big {
+            justify-content: center;
+        }
 }
   
 .service-card {
@@ -44,6 +77,31 @@
     width: 330px;
     flex-direction: column;
     align-items: center;
+        @include media-laptop-small {
+            width: 270px;
+        }
+        @include media-tablet {
+            width: 280px;
+        }
+        @include media-mobile-big {
+            margin: 34px 0 0 0;
+        }
+    & img {
+        width: 329px;
+        height: 350px;
+        @include media-laptop-small {
+            width: 270px;
+            height: 350px;
+        }
+        @include media-tablet {
+            width: 279px;
+            height: 350px;
+        }
+        @include media-mobile-big {
+            width: 279px;
+            height: 350px;
+        }
+    }
 }
   
 .service-card div{
@@ -55,11 +113,31 @@
     height: 100px;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 55px 0;
+        @include media-laptop-small {
+            width: 270px;
+            margin: 0 0 38px 0;
+        }
+        @include media-tablet {
+            width: 280px;
+            margin: 0 0 38px 0;
+        }
+        @include media-mobile-big {
+            margin: 0 0 0 0;
+        }
 }
   
 .service-card p {
     font-family: 'Inter', sans-serif;
     @include font(1.6rem, 2.0rem, 400, normal);
     color: $heading-color;
-    margin: 3px 0 0 0;
+    margin: 0 0 0 0;
+        @include media-tablet {
+            text-align: center;
+            width: 260px;
+            margin: 0 0 20px 0;
+        }
+        @include media-mobile-big {
+            margin: 0 0 20px 0;
+        }
 }

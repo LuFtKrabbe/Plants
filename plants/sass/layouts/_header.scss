@@ -5,47 +5,60 @@
 .header-wrapper {
     @include flex (flex, center, space-between);
     height: 134px;
-    width: 1222px;
-    padding: 0 109px 0 109px;
+    @include media-tablet {
+        height: 117px;
+    }
+    @include media-mobile-big {
+        height: 96px;
+    }
 }
-  
+
 .header-logo {
     font-family: 'Inika', serif;
     @include font(1.6rem, 2.1rem, 400, normal);
-    text-decoration: none;
-    color: dark-color;
+    color: $dark-color;
     padding: 0 0 8px 0;
+    text-decoration: none;
+    white-space: nowrap;
+    &:hover {
+        @extend %transition;
+        transform: scale(1.2);
+    }
+    @include media-tablet {
+        padding: 0 0 4px 0;
+    }
+    @include media-mobile-big {
+        padding: 0 0 4px 0;
+    }
 }
-  
-.header-logo:hover {
-    transform: scale(1.2);
-    @extend %transition;
+
+.header-navigation {
+    @include media-correct-I {
+        display: none;
+    }
 }
-  
+
 .header-navigation ul {
     display: flex;
+    padding: 0;
     list-style: none;
-}
-  
-.header-navigation li {
-    margin: 0 0 0 47px;
-}
-  
-.header-navigation li a {
-    font-family: 'Inika', serif;
-    @include font(1.6rem, 5.0rem, 400, normal);
-    text-decoration: none;
-    list-style: none;
-    color: $dark-color;
-}
-  
-.header-navigation li:hover {
-    transform: scale(1.2);
-    @extend %transition;
-}
-  
-.header-navigation li:first-child a {
-    list-style: none;
-    font-weight: 700;
-    color: $primary-color;
+    & li {
+        margin: 0 0 0 47px;
+        & a {
+            font-family: 'Inika', serif;
+            @include font(1.6rem, 5.0rem, 400, normal);
+            text-decoration: none;
+            color: $dark-color; 
+            white-space: nowrap;
+        }
+        &:first-child a {
+            font-weight: 700;
+            color: $primary-color;
+            margin: 0 0 0 0;
+        }
+        &:hover {
+            @extend %transition;
+            transform: scale(1.2);
+        }
+    }
 }

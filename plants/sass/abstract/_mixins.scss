@@ -22,8 +22,20 @@
     @media (max-width: $content-width) { @content; }
 }
 
+@mixin media-laptop-small {
+    @media (max-width: $laptop-small-width) { @content; }
+}
+
 @mixin media-tablet {
     @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-correct-I {
+    @media (max-width: $correct-I) { @content; }
+}
+
+@mixin media-correct-II {
+    @media (max-width: $correct-II) { @content; }
 }
 
 @mixin media-mobile-big {
@@ -32,10 +44,4 @@
 
 @mixin media-mobile-small {
     @media (max-width: $mobile-small-width) { @content; }
-}
-
-@media screen and (max-width: 500px) {
-    .logo {
-        width: 100px;
-    }
 }
