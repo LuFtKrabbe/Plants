@@ -87,24 +87,22 @@
             margin: 34px 0 0 0;
         }
     & img {
-        width: 329px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        width: 330px;
         height: 350px;
         @include media-laptop-small {
             width: 270px;
             height: 350px;
         }
         @include media-tablet {
-            width: 279px;
-            height: 350px;
-        }
-        @include media-mobile-big {
-            width: 279px;
+            width: 280px;
             height: 350px;
         }
     }
 }
   
-.service-card div{
+.service-card div {
     box-sizing: border-box;
     border: 1px solid $border-color;
     border-radius: 0 0 20px 20px;
@@ -132,6 +130,11 @@
     @include font(1.6rem, 2.0rem, 400, normal);
     color: $heading-color;
     margin: 0 0 0 0;
+        @include media-laptop-small {
+            text-align: center;
+            width: 260px;
+            height: 350px;
+        }
         @include media-tablet {
             text-align: center;
             width: 260px;

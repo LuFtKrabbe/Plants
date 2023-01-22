@@ -580,7 +580,9 @@ p {
   }
 }
 .service-card img {
-  width: 329px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 330px;
   height: 350px;
 }
 @media (max-width: 1024px) {
@@ -591,13 +593,7 @@ p {
 }
 @media (max-width: 768px) {
   .service-card img {
-    width: 279px;
-    height: 350px;
-  }
-}
-@media (max-width: 380px) {
-  .service-card img {
-    width: 279px;
+    width: 280px;
     height: 350px;
   }
 }
@@ -639,6 +635,13 @@ p {
   font-style: normal;
   color: #717171;
   margin: 0 0 0 0;
+}
+@media (max-width: 1024px) {
+  .service-card p {
+    text-align: center;
+    width: 260px;
+    height: 350px;
+  }
 }
 @media (max-width: 768px) {
   .service-card p {
