@@ -14,15 +14,17 @@
 .changeCross {
     @extend %transition;
     @include media-correct-I {
-        @include flex (flex, center, space-between);
+        @include flex (flex, center, center);
         flex-direction: row;
         transform: rotate(180deg);
         cursor: pointer;
+        background-color: $primary-color;
+        border-radius: 8px;
     }
 }
 
 .hamburger-line {
     background-color: $text-color;
-    width: 100%;
+    width: 40px;
     height: 2px;
 }

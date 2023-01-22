@@ -76,17 +76,19 @@ p {
   .changeCross {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
     transform: rotate(180deg);
     cursor: pointer;
+    background-color: #E06733;
+    border-radius: 8px;
   }
 }
 
 .hamburger-line {
   background-color: #636060;
-  width: 100%;
+  width: 40px;
   height: 2px;
 }
 
@@ -664,11 +666,15 @@ p {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 36px 0 120px 0;
 }
 @media (max-width: 768px) {
   .prices-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 40px 0 85px 0;
   }
 }
@@ -748,7 +754,7 @@ p {
 }
 @media (max-width: 1024px) {
   .prices h2 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     line-height: 4.2rem;
     font-weight: 700;
     font-style: normal;
@@ -1084,7 +1090,7 @@ p {
   .contacts img {
     width: 100px;
     height: 124px;
-    margin: 135px 0 0 0;
+    margin: 133px 0 0 0;
     order: 1;
   }
 }
@@ -1117,7 +1123,7 @@ p {
 
 .contacts-city {
   position: relative;
-  padding: 38px 0 0 0;
+  padding: 35px 0 0 0;
 }
 @media (max-width: 768px) {
   .contacts-city {
@@ -1126,7 +1132,7 @@ p {
 }
 @media (max-width: 380px) {
   .contacts-city {
-    padding: 78px 0 0 0;
+    padding: 80px 0 0 0;
   }
 }
 
@@ -1137,6 +1143,11 @@ p {
   width: 16px;
   height: 16px;
   margin: 17px 0 17px 0;
+}
+@media (max-width: 380px) {
+  .contacts-city::after {
+    right: 22px;
+  }
 }
 
 .footer {
@@ -1204,15 +1215,6 @@ p {
     font-style: normal;
   }
 }
-@media (max-width: 768px) {
-  .footer a, .footer p {
-    margin: 18px 0 0 0;
-    font-size: 2rem;
-    line-height: 2.4rem;
-    font-weight: 400;
-    font-style: normal;
-  }
-}
 
 .footer-rights {
   display: flex;
@@ -1221,16 +1223,16 @@ p {
 }
 @media (max-width: 768px) {
   .footer-rights {
-    padding: 14px 0 0 0;
+    padding: 15px 0 0 0;
   }
 }
 @media (max-width: 380px) {
   .footer-rights {
-    padding: 2px 0 0 0;
+    padding: 3px 0 0 0;
   }
 }
 .footer-rights :nth-child(2) {
-  padding: 0 20px 0 20px;
+  padding: 0 22px 0 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

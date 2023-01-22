@@ -13,10 +13,10 @@ function dropHamburgerMenu() {
 }
 
 window.onclick = function(event) {
-    if (event.target.matches('.header-overlay') && window.outerWidth <= 750) {
+    if (event.target.matches('.header-overlay') && window.innerWidth <= 750) {
         dropHamburgerMenu();
     }
-    if (event.target.matches('.header-navigation ul li a') && window.outerWidth <= 750) {
+    if (event.target.matches('.header-navigation ul li a') && window.innerWidth <= 750) {
         dropHamburgerMenu();
     }
 }
