@@ -1,5 +1,5 @@
 console.log(`Self-estimation of work:\n
-Score: -- / --\n
+Score: 85 / 85\n
 - [x] The tablet layout is completely according to the sketch (24/24);\n
 - [x] The mobile layout is completely according to the sketch (24/24);\n
 - [x] There is no deformation of the sketch and horizontal scroll-line (15/15);\n
