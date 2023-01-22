@@ -1,0 +1,23 @@
+@import "abstract/constants";
+@import "abstract/placeholder";
+@import "abstract/mixins";
+
+@import "base/base";
+@import "base/buttons";
+@import "base/hamburger";
+
+// Components
+@import "components/contacts";
+
+//layouts
+@import "layouts/wrapper";
+
+@import "layouts/header";
+
+@import "layouts/welcome";
+@import "layouts/service";
+@import "layouts/prices";
+@import "layouts/about";
+@import "layouts/contacts";
+
+@import "layouts/footer";

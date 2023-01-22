@@ -1,0 +1,154 @@
+.prices {
+    background-color: $light-color;
+}
+
+.prices-wrapper {
+    @include flex (flex, flex-start, space-between);
+    padding: 36px 0 120px 0;
+        @include media-tablet {
+            @include flex (flex, flex-start, space-between, wrap);
+            padding: 40px 0 85px 0;
+        }
+        @include media-correct-I {
+            justify-content: space-around;
+            padding: 36px 0 50px 0;
+        }
+        @include media-mobile-big {
+            justify-content: center;
+            padding: 26px 0 40px 0;
+        }
+}
+
+.prices-content {
+    @include flex (flex, flex-end, space-between);
+    flex-direction: column;
+    align-content: flex-end;
+    max-width: 452px;
+        @include media-correct-I {
+            align-items: center;
+        }
+        @include media-mobile-big {
+            align-items: center;
+        }
+    & .button-type1 {
+        box-sizing: border-box;
+        font-family: 'Inika', serif;
+        @include font(2.0rem, 2.6rem, 700, normal);
+        @include button_size (162px, 50px, 5px);
+        background-color: $light-color;
+            @include media-mobile-big {
+                @include font(1.5rem, 2.0rem, 700, normal);
+                @include button_size (121px, 35px, 5px);
+            }
+    }
+    & img{
+        height: 175px;
+        width: 152px;
+        margin: 36px 0 0 0;
+        @include media-mobile-big {
+            display: none;
+        }
+    }
+}
+  
+.prices h2 {
+    font-family: 'Inter', sans-serif;
+    @include font(4.0rem, 4.8rem, 700, normal);
+    margin: 0 0 60px 0;
+        @include media-laptop-small {
+            @include font(3.3rem, 4.2rem, 700, normal);
+        }
+        @include media-tablet {
+            @include font(3.5rem, 4.2rem, 700, normal);
+            margin: 0 0 58px 15px;
+        }
+        @include media-correct-I {
+            text-align: center;
+            margin: 0 0 45px 0;
+        }
+        @include media-mobile-big {
+            @include font(2.5rem, 3.0rem, 700, normal);
+            text-align: center;
+            margin: 0 0 38px 0;
+        }
+}
+  
+.prices p {
+    font-family: 'Inter', sans-serif;
+    @include font(4.0rem, 5.0rem, 700, normal);
+    text-align: right;
+    color: $dark-color;
+    margin: 0 0 40px 0;
+        @include media-laptop-small {
+            @include font(2.5rem, 3.5rem, 700, normal);
+            margin: 50px 0 30px 0;
+        }
+        @include media-tablet {
+            @include font(2.5rem, 3.5rem, 700, normal);
+            margin: 100px 0 30px 0;
+        }
+        @include media-correct-I {
+            @include font(2.0rem, 3.5rem, 700, normal);
+            margin: 10px 0 20px 0;
+            text-align: center;
+        }
+        @include media-mobile-big {
+            @include font(2.0rem, 3.5rem, 700, normal);
+            margin: 18px 0 20px 0;
+            text-align: center;
+        }
+    & span {
+        color: $highlight-color;
+    }
+}
+  
+.prices-block-button {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-content: space-between;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    height: 284px;
+    width: 332px;
+    padding: 34px 0 34px 0;
+    @include media-mobile-big {
+        padding: 28px 0 28px 0;
+        height: 236px;
+        width: 225px;
+    }
+}
+  
+.prices-button {
+    font-family: 'Inter', sans-serif;
+    @include font(2.0rem, 2.0rem, 700, normal);
+    @include button_size (250px, 50px, 20px);
+    position: relative;
+    text-align: left;
+    border: none;
+    background-color: $bg-color;
+    padding: 0 0 0 40px;
+    cursor: pointer;
+        @include media-tablet {
+            margin: 0px 0 0px 0;
+        }
+        @include media-mobile-big {
+            @include font(1.5rem, 2.0rem, 700, normal);
+            @include button_size (180px, 50px, 20px);
+            margin: 0 0 0 0;
+            padding: 0 0 0 30px;
+        }    
+    &:hover {
+        box-shadow: $active-selector-color (0 0 10px 5px);
+        @extend %transition;
+    }
+    &::after {
+        position: absolute;
+        right: 35px;
+        content: url(../../img/icons/accordion_btn_light.svg);
+        width: 16px;
+        height: 16px;
+        margin: 0 0 0 0;
+    }
+}

@@ -1,0 +1,15 @@
+.button-type1 {
+    background-color: $bg-color;
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    cursor: pointer;
+    &:hover {
+        background-color: $primary-color !important;
+        color: $light-color !important;
+        @extend %transition;
+    }
+    &:focus {
+        background-color: $primary-color !important;
+        color: $light-color !important;
+    } 
+}

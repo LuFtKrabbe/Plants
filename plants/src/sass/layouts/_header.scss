@@ -1,0 +1,99 @@
+.header {
+    background-color: $bg-color;
+}
+
+.header-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(38, 18, 0, 0.555);
+    overflow-x: hidden;
+    @extend %transition;
+}
+
+.header-wrapper {
+    @include flex (flex, center, space-between);
+    height: 134px;
+        @include media-tablet {
+            height: 117px;
+        }
+        @include media-mobile-big {
+            height: 96px;
+        }
+}
+
+.header-logo {
+    font-family: 'Inika', serif;
+    @include font(1.6rem, 2.1rem, 400, normal);
+    color: $dark-color;
+    padding: 0 0 8px 0;
+    text-decoration: none;
+    white-space: nowrap;
+    &:hover {
+        @extend %transition;
+        transform: scale(1.2);
+    }
+    @include media-tablet {
+        padding: 0 0 4px 0;
+    }
+    @include media-mobile-big {
+        padding: 0 0 4px 0;
+    }
+}
+
+.header-navigation {
+    @extend %transition;
+    @include media-correct-I {
+        width: 50%;
+        margin-top: -500px;
+    }
+}
+
+.show-navigation {
+    @include media-correct-I {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        margin-top: 200px;
+    }
+}
+
+.header-navigation ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+        @include media-correct-I {
+            display: block;
+            position: relative;
+            background-color: $light-color;
+            border: solid 2px $primary-color;
+            border-radius: 20px;
+            z-index: 1;  
+        }
+    & li {
+        margin: 0 0 0 47px;
+            @include media-correct-I {
+                margin: 0 0 0 0;
+                text-align: center;
+            }
+        & a {
+            font-family: 'Inika', serif;
+            @include font(1.6rem, 5.0rem, 400, normal);
+            text-decoration: none;
+            color: $dark-color; 
+            white-space: nowrap;
+        }
+        &:first-child a {
+            font-weight: 700;
+            color: $primary-color;
+            margin: 0 0 0 0;
+        }
+        &:hover {
+            @extend %transition;
+            transform: scale(1.2);
+        }
+    }
+}

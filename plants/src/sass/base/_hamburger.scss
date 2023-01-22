@@ -1,0 +1,30 @@
+.hamburger {
+    z-index: 1;
+    display: none;
+    width: 40px;
+    height: 26px;
+    @extend %transition;
+    @include media-correct-I {
+        @include flex (flex, center, space-between);
+        flex-direction: column;
+        cursor: pointer;
+    }
+}
+
+.changeCross {
+    @extend %transition;
+    @include media-correct-I {
+        @include flex (flex, center, center);
+        flex-direction: row;
+        transform: rotate(180deg);
+        cursor: pointer;
+        background-color: $primary-color;
+        border-radius: 8px;
+    }
+}
+
+.hamburger-line {
+    background-color: $text-color;
+    width: 40px;
+    height: 2px;
+}
