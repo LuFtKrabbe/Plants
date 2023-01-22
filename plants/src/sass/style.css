@@ -1,4 +1,4 @@
-.prices-button:hover, .header-navigation ul li:hover, .header-logo:hover, .button-type1:hover {
+.prices-button:hover, .header-navigation ul li:hover, .header-navigation, .header-logo:hover, .header-overlay, .changeCross, .hamburger, .button-type1:hover {
   transition: all 300ms ease-in-out;
 }
 
@@ -55,24 +55,39 @@ p {
   color: #FFFFFF !important;
 }
 
-.hamburger-line {
-  background-color: #636060;
-  width: 100%;
-  height: 2px;
-}
-
 .hamburger {
+  z-index: 1;
   display: none;
   width: 40px;
-  height: 32px;
+  height: 26px;
 }
 @media (max-width: 750px) {
   .hamburger {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    cursor: pointer;
   }
+}
+
+@media (max-width: 750px) {
+  .changeCross {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+}
+
+.hamburger-line {
+  background-color: #636060;
+  width: 100%;
+  height: 2px;
 }
 
 .contacts-city select {
@@ -96,6 +111,11 @@ p {
 @media (max-width: 768px) {
   .contacts-city select {
     width: 450px;
+  }
+}
+@media (max-width: 750px) {
+  .contacts-city select {
+    width: 350px;
   }
 }
 @media (max-width: 380px) {
@@ -139,6 +159,17 @@ p {
 
 .header {
   background-color: #EDF2EC;
+}
+
+.header-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(38, 18, 0, 0.555);
+  overflow-x: hidden;
 }
 
 .header-wrapper {
@@ -186,7 +217,17 @@ p {
 
 @media (max-width: 750px) {
   .header-navigation {
-    display: none;
+    width: 50%;
+    margin-top: -500px;
+  }
+}
+
+@media (max-width: 750px) {
+  .show-navigation {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin-top: 200px;
   }
 }
 
@@ -195,8 +236,24 @@ p {
   padding: 0;
   list-style: none;
 }
+@media (max-width: 750px) {
+  .header-navigation ul {
+    display: block;
+    position: relative;
+    background-color: #FFFFFF;
+    border: solid 2px #E06733;
+    border-radius: 20px;
+    z-index: 1;
+  }
+}
 .header-navigation ul li {
   margin: 0 0 0 47px;
+}
+@media (max-width: 750px) {
+  .header-navigation ul li {
+    margin: 0 0 0 0;
+    text-align: center;
+  }
 }
 .header-navigation ul li a {
   font-family: "Inika", serif;
@@ -832,7 +889,7 @@ p {
 .prices-button::after {
   position: absolute;
   right: 35px;
-  content: url(../img/icons/accordion_btn_light.svg);
+  content: url(../../img/icons/accordion_btn_light.svg);
   width: 16px;
   height: 16px;
   margin: 0 0 0 0;
@@ -1073,7 +1130,7 @@ p {
 .contacts-city::after {
   position: absolute;
   right: 35px;
-  content: url(../img/icons/accordion_btn.svg);
+  content: url(../../img/icons/accordion_btn.svg);
   width: 16px;
   height: 16px;
   margin: 17px 0 17px 0;

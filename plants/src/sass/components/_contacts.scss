@@ -15,6 +15,9 @@
         @include media-tablet {
             width: 450px;
         }
+        @include media-correct-I {
+            width: 350px;
+        }
         @include media-mobile-big {
             width: 300px;
         }

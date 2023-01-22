@@ -4,35 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./img/general/houseplant.png">
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="src/sass/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"> 
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap">
     <title>Plants</title>
   </head>
   <body>
     <header class="header">
-      <div class="wrapper header-wrapper">
-        <a href="#" class="header-logo">
-          <img src="./img/icons/logo.svg" alt="logo">Plants
-        </a>
-        <nav class="header-navigation">
-          <ul>
-            <li><a href="#welcome">Home</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#prices">Price</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
-        </nav>
-        <nav class="hamburger">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </nav>
-      </div>
+        <div id="header-overlay"></div>
+        <div class="wrapper header-wrapper">
+          <a href="#" class="header-logo">
+            <img src="./img/icons/logo.svg" alt="logo">Plants
+          </a>
+          <nav class="header-navigation" id="navigation"> 
+            <ul>
+              <li><a href="#welcome">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#prices">Price</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <nav class="hamburger" id="hamburger" onclick="dropHamburgerMenu()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </nav>
+        </div>
     </header>
     <main>
       <section class="welcome" id="welcome">
@@ -166,5 +166,6 @@
           </ul>
         </div>
     </footer>
+    <script src="src/js/index.js"></script>
   </body>
 </html>
