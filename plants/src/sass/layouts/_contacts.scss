@@ -95,4 +95,8 @@
         @include media-mobile-big {
             right: 22px;
         }
+        @include media-mobile-small {
+            margin: 12px 0 12px 0;
+            right: 22px;
+        }
     }

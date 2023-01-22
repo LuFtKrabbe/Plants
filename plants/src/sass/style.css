@@ -1149,6 +1149,12 @@ p {
     right: 22px;
   }
 }
+@media (max-width: 320px) {
+  .contacts-city::after {
+    margin: 12px 0 12px 0;
+    right: 22px;
+  }
+}
 
 .footer {
   background-color: #FFFFFF;

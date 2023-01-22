@@ -1,10 +1,9 @@
 console.log(`Self-estimation of work:\n
 Score: -- / --\n
-- [x] Score 1 (0/--);\n
-- [x] Score 2 (0/--);\n
-- [x] Score 3 (0/--);\n
-- [x] Score 4 (0/--);\n
-- [x] Score 5 (0/--)`);
+- [x] The tablet layout is completely according to the sketch (24/24);\n
+- [x] The mobile layout is completely according to the sketch (24/24);\n
+- [x] There is no deformation of the sketch and horizontal scroll-line (15/15);\n
+- [x] Adaptive menu has been added (22/22).`);
 
 function dropHamburgerMenu() {
     document.getElementById("hamburger").classList.toggle("changeCross");
