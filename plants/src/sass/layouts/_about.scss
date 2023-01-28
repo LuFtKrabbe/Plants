@@ -5,42 +5,39 @@
 .about-wrapper {
     @include flex (flex, center, space-between, wrap);
     padding: 93px 0px 94px 0px;
-        @include media-tablet {
-            justify-content: center;
-            padding: 40px 0px 94px 0px;
-        }
-        @include media-mobile-big {
-            justify-content: center;
-            padding: 30px 0px 25px 0px;
-        }
+    @include media-tablet {
+        justify-content: center;
+        padding: 40px 0px 94px 0px;
+    }
+    @include media-mobile-big {
+        padding: 30px 0px 25px 0px;
+    }
 }
   
 .about-content {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex (flex, normal, normal, wrap);
     width: 605px;
-        @include media-tablet {
-            justify-content: center;
-            width: 100%;
-        }
-        @include media-mobile-big {
-            @include font(2.5rem, 3.3rem, 400, normal);
-        }
+    @include media-tablet {
+        justify-content: center;
+        width: 100%;
+    }
+    @include media-mobile-big {
+        @include font(2.5rem, 3.3rem, 400, normal);
+    }
 }
 
 .about h2 {
     color: $highlight-color;
     margin: 10px 0 0 0;
-        @include media-tablet {
-            @include font(3.5rem, 4.6rem, 400, normal);
-            text-align: center;
-            margin: 0 0 50px 0;
-        }
-        @include media-mobile-big {
-            @include font(2.5rem, 3.3rem, 400, normal);
-            text-align: center;
-            margin: 0 0 15px 0;
-        }
+    @include media-tablet {
+        @include font(3.5rem, 4.6rem, 400, normal);
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+    @include media-mobile-big {
+        @include font(2.5rem, 3.3rem, 400, normal);
+        margin: 0 0 15px 0;
+    }
     & span{
         color: $primary-color;
     }
@@ -50,24 +47,24 @@
     font-family: 'Inter', sans-serif;
     @include font(2.0rem, 3.0rem, 400, normal);
     margin: 38px 0 0 0;
-        @include media-tablet {
-            margin: 0 0 70px 0;
-        }
-        @include media-mobile-big {
-            @include font(1.5rem, 2.5rem, 400, normal);
-            margin: 0 0 0 0;
-        }
+    @include media-tablet {
+        margin: 0 0 70px 0;
+    }
+    @include media-mobile-big {
+        @include font(1.5rem, 2.5rem, 400, normal);
+        margin: 0;
+    }
 }
 
 .about img {
     width: 465px;
     height: 480px;
-        @include media-tablet {
-            width: 250px;
-            height: 258px;
-        }
-        @include media-mobile-big {
-            width: 150px;
-            height: 155px;
-        }
+    @include media-tablet {
+        width: 250px;
+        height: 258px;
+    }
+    @include media-mobile-big {
+        width: 150px;
+        height: 155px;
+    }
 }

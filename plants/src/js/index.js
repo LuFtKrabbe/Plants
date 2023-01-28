@@ -6,7 +6,7 @@ Score: 85 / 85\n
 - [x] Adaptive menu has been added (22/22).`);
 
 function dropHamburgerMenu() {
-    document.getElementById("hamburger").classList.toggle("changeCross");
+    document.getElementById("hamburger").classList.toggle("change-cross");
     document.getElementById("navigation").classList.toggle("show-navigation");
     document.getElementById("header-overlay").classList.toggle("header-overlay");
 }

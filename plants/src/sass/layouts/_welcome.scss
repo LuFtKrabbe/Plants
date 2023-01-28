@@ -5,46 +5,37 @@
 .welcome-wrapper {
     @include flex (flex, center, space-between);
     padding: 63px 0px 58px 0px;
-        @include media-laptop-small {
-            @include flex (flex, flex-start, space-between);
-        }
         @include media-tablet {
-            @include flex (flex, flex-start, space-between);
             padding: 40px 0px 70px 0px;
         }
         @include media-mobile-big {
             padding: 25px 0px 22px 0px;
         }
         & img {
-            @include media-laptop-small {
-                width: 280px;
-                height: 255px;
-            }
-            @include media-tablet {
-                order: 1;
-                width: 280px;
-                height: 255px;
-            }
-            @include media-correct-I {
-                align-self: flex-end;
-                width: 150px;
-                height: 120px;
-            }
-            @include media-correct-II  {
-                display: none;
-            }
-            @include media-mobile-big {
-                //display: none;
-            }
+        @include media-laptop-small {
+            width: 280px;
+            height: 255px;
         }
+        @include media-tablet {
+            order: 1;
+        }
+        @include media-correct-I {
+            align-self: flex-end;
+            width: 150px;
+            height: 120px;
+        }
+        @include media-correct-II  {
+            display: none;
+        }
+    }
 }
   
 .welcome-content {
     @include flex (flex, center, flex-start, wrap);
     width: 550px;
-        @include media-tablet {
-            width: 350px;
-        }
+    @include media-tablet {
+        width: 350px;
+    }
 }
   
 .welcome-content h1 {
@@ -53,9 +44,6 @@
     color: $heading-color;
     margin: 0;
     @include media-laptop-small {
-        @include font(3.5rem, 5.0rem, 700, normal);
-    }
-    @include media-tablet {
         @include font(3.5rem, 5.0rem, 700, normal);
     }
     @include media-mobile-big {
@@ -71,17 +59,16 @@
     @include font(2.0rem, 3.5rem, 400, normal);
     padding: 46px 25px 47px 0;
     margin: 0;
-        @include media-laptop-small {
-            @include font(1.8rem, 2.5rem, 400, normal);
-            padding: 30px 0 35px 0;
-        }
-        @include media-tablet {
-            @include font(1.6rem, 2.5rem, 400, normal);
-            padding: 30px 0px 35px 5px;
-        }
-        @include media-mobile-big {
-            padding: 20px 0 28px 0;
-        }
+    @include media-laptop-small {
+        @include font(1.8rem, 2.5rem, 400, normal);
+        padding: 30px 0 35px 5px;
+    }
+    @include media-tablet {
+        @include font(1.6rem, 2.5rem, 400, normal);
+    }
+    @include media-mobile-big {
+        padding: 20px 0 28px 0;
+    }
 }
   
 .welcome .button-type1 {

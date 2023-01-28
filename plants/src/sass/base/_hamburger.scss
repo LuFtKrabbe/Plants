@@ -11,7 +11,7 @@
     }
 }
 
-.changeCross {
+.change-cross {
     @extend %transition;
     @include media-correct-I {
         @include flex (flex, center, center);

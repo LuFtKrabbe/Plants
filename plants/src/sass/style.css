@@ -1,4 +1,4 @@
-.prices-button:hover, .header-navigation ul li:hover, .header-navigation, .header-logo:hover, .header-overlay, .changeCross, .hamburger, .button-type1:hover {
+.prices-button:hover, .header-navigation ul li:hover, .header-navigation, .header-logo:hover, .header-overlay, .change-cross, .hamburger, .button-type1:hover {
   transition: all 300ms ease-in-out;
 }
 
@@ -73,7 +73,7 @@ p {
 }
 
 @media (max-width: 750px) {
-  .changeCross {
+  .change-cross {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,15 +224,6 @@ p {
   }
 }
 
-@media (max-width: 750px) {
-  .show-navigation {
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    margin-top: 200px;
-  }
-}
-
 .header-navigation ul {
   display: flex;
   padding: 0;
@@ -276,6 +267,15 @@ p {
   transform: scale(1.2);
 }
 
+@media (max-width: 750px) {
+  .show-navigation {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin-top: 200px;
+  }
+}
+
 .welcome {
   background-color: #EDF2EC;
 }
@@ -287,20 +287,8 @@ p {
   flex-wrap: nowrap;
   padding: 63px 0px 58px 0px;
 }
-@media (max-width: 1024px) {
-  .welcome-wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-}
 @media (max-width: 768px) {
   .welcome-wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: nowrap;
     padding: 40px 0px 70px 0px;
   }
 }
@@ -318,8 +306,6 @@ p {
 @media (max-width: 768px) {
   .welcome-wrapper img {
     order: 1;
-    width: 280px;
-    height: 255px;
   }
 }
 @media (max-width: 750px) {
@@ -334,6 +320,7 @@ p {
     display: none;
   }
 }
+
 .welcome-content {
   display: flex;
   align-items: center;
@@ -357,14 +344,6 @@ p {
   margin: 0;
 }
 @media (max-width: 1024px) {
-  .welcome-content h1 {
-    font-size: 3.5rem;
-    line-height: 5rem;
-    font-weight: 700;
-    font-style: normal;
-  }
-}
-@media (max-width: 768px) {
   .welcome-content h1 {
     font-size: 3.5rem;
     line-height: 5rem;
@@ -399,7 +378,7 @@ p {
     line-height: 2.5rem;
     font-weight: 400;
     font-style: normal;
-    padding: 30px 0 35px 0;
+    padding: 30px 0 35px 5px;
   }
 }
 @media (max-width: 768px) {
@@ -408,7 +387,6 @@ p {
     line-height: 2.5rem;
     font-weight: 400;
     font-style: normal;
-    padding: 30px 0px 35px 5px;
   }
 }
 @media (max-width: 380px) {
@@ -474,7 +452,7 @@ p {
 }
 @media (max-width: 380px) {
   .service-head {
-    padding: 30px 0 0px 0;
+    padding: 30px 0 0 0;
   }
 }
 
@@ -502,12 +480,13 @@ p {
     line-height: 3.3rem;
     font-weight: 400;
     font-style: normal;
-    margin: 0 20px 34px 0;
   }
 }
 
 .service-block-button {
   display: flex;
+  align-items: normal;
+  justify-content: normal;
   flex-wrap: wrap;
 }
 
@@ -522,11 +501,6 @@ p {
   height: 50px;
   border-radius: 5px;
   margin: 9px 38px 9px 0;
-}
-@media (max-width: 768px) {
-  .service .button-type1 {
-    margin: 9px 38px 9px 0;
-  }
 }
 @media (max-width: 380px) {
   .service .button-type1 {
@@ -560,11 +534,13 @@ p {
 }
 
 .service-card {
-  box-sizing: border-box;
   display: flex;
+  align-items: center;
+  justify-content: normal;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
   width: 330px;
   flex-direction: column;
-  align-items: center;
 }
 @media (max-width: 1024px) {
   .service-card {
@@ -590,25 +566,25 @@ p {
 @media (max-width: 1024px) {
   .service-card img {
     width: 270px;
-    height: 350px;
   }
 }
 @media (max-width: 768px) {
   .service-card img {
     width: 280px;
-    height: 350px;
   }
 }
 
 .service-card div {
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  flex-wrap: nowrap;
   box-sizing: border-box;
   border: 1px solid #E3E1D5;
   border-radius: 0 0 20px 20px;
-  display: flex;
   width: 330px;
   height: 100px;
   flex-direction: column;
-  align-items: center;
   margin: 0 0 55px 0;
 }
 @media (max-width: 1024px) {
@@ -620,12 +596,11 @@ p {
 @media (max-width: 768px) {
   .service-card div {
     width: 280px;
-    margin: 0 0 38px 0;
   }
 }
 @media (max-width: 380px) {
   .service-card div {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 }
 
@@ -636,7 +611,7 @@ p {
   font-weight: 400;
   font-style: normal;
   color: #717171;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 @media (max-width: 1024px) {
   .service-card p {
@@ -646,13 +621,6 @@ p {
   }
 }
 @media (max-width: 768px) {
-  .service-card p {
-    text-align: center;
-    width: 260px;
-    margin: 0 0 20px 0;
-  }
-}
-@media (max-width: 380px) {
   .service-card p {
     margin: 0 0 20px 0;
   }
@@ -701,11 +669,6 @@ p {
   max-width: 452px;
 }
 @media (max-width: 750px) {
-  .prices-content {
-    align-items: center;
-  }
-}
-@media (max-width: 380px) {
   .prices-content {
     align-items: center;
   }
@@ -772,7 +735,7 @@ p {
 @media (max-width: 750px) {
   .prices h2 {
     text-align: center;
-    margin: 0 0 45px 0;
+    margin: 0 0 38px 0;
   }
 }
 @media (max-width: 380px) {
@@ -781,8 +744,6 @@ p {
     line-height: 3rem;
     font-weight: 700;
     font-style: normal;
-    text-align: center;
-    margin: 0 0 38px 0;
   }
 }
 
@@ -807,10 +768,6 @@ p {
 }
 @media (max-width: 768px) {
   .prices p {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    font-weight: 700;
-    font-style: normal;
     margin: 100px 0 30px 0;
   }
 }
@@ -824,25 +781,16 @@ p {
     text-align: center;
   }
 }
-@media (max-width: 380px) {
-  .prices p {
-    font-size: 2rem;
-    line-height: 3.5rem;
-    font-weight: 700;
-    font-style: normal;
-    margin: 18px 0 20px 0;
-    text-align: center;
-  }
-}
 .prices p span {
   color: #499A18;
 }
 
 .prices-block-button {
   display: flex;
+  align-items: normal;
+  justify-content: space-around;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-content: space-around;
   align-content: space-between;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
@@ -876,7 +824,7 @@ p {
 }
 @media (max-width: 768px) {
   .prices-button {
-    margin: 0px 0 0px 0;
+    margin: 0;
   }
 }
 @media (max-width: 380px) {
@@ -888,7 +836,6 @@ p {
     width: 180px;
     height: 50px;
     border-radius: 20px;
-    margin: 0 0 0 0;
     padding: 0 0 0 30px;
   }
 }
@@ -901,7 +848,7 @@ p {
   content: url(../../img/icons/accordion_btn_light.svg);
   width: 16px;
   height: 16px;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 .about {
@@ -923,13 +870,14 @@ p {
 }
 @media (max-width: 380px) {
   .about-wrapper {
-    justify-content: center;
     padding: 30px 0px 25px 0px;
   }
 }
 
 .about-content {
   display: flex;
+  align-items: normal;
+  justify-content: normal;
   flex-wrap: wrap;
   width: 605px;
 }
@@ -968,7 +916,6 @@ p {
     line-height: 3.3rem;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
     margin: 0 0 15px 0;
   }
 }
@@ -995,7 +942,7 @@ p {
     line-height: 2.5rem;
     font-weight: 400;
     font-style: normal;
-    margin: 0 0 0 0;
+    margin: 0;
   }
 }
 
@@ -1025,23 +972,12 @@ p {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 0 0 0 0;
+  padding: 0;
 }
 @media (max-width: 1024px) {
   .contacts-wrapper {
     flex-direction: column;
     align-items: center;
-  }
-}
-@media (max-width: 768px) {
-  .contacts-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 380px) {
-  .contacts-wrapper {
-    flex-direction: column;
   }
 }
 
@@ -1052,7 +988,7 @@ p {
   flex-wrap: nowrap;
   flex-direction: column;
   width: 709px;
-  padding: 0 0 0 0;
+  padding: 0;
 }
 @media (max-width: 1024px) {
   .contacts-content {
@@ -1080,10 +1016,7 @@ p {
 }
 @media (max-width: 768px) {
   .contacts img {
-    width: 200px;
-    height: 248px;
     margin: 250px 0 0 20px;
-    order: 1;
   }
 }
 @media (max-width: 380px) {
@@ -1091,7 +1024,6 @@ p {
     width: 100px;
     height: 124px;
     margin: 133px 0 0 0;
-    order: 1;
   }
 }
 
@@ -1152,7 +1084,6 @@ p {
 @media (max-width: 320px) {
   .contacts-city::after {
     margin: 12px 0 12px 0;
-    right: 22px;
   }
 }
 
@@ -1165,15 +1096,10 @@ p {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 0 0 0;
+  padding: 0;
   min-height: 130px;
 }
 @media (max-width: 768px) {
-  .footer-wrapper {
-    flex-direction: column;
-  }
-}
-@media (max-width: 380px) {
   .footer-wrapper {
     flex-direction: column;
   }
@@ -1187,10 +1113,7 @@ p {
   flex-wrap: wrap;
   width: 188px;
   padding-inline-start: 0;
-  padding: 0 0 0 0;
-}
-.footer ul a {
-  line-height: 0rem;
+  padding: 0;
 }
 @media (max-width: 768px) {
   .footer ul {
@@ -1201,6 +1124,9 @@ p {
   .footer ul {
     margin: 12px 0 10px 0;
   }
+}
+.footer ul a {
+  line-height: 0rem;
 }
 
 .footer a, .footer p {
