@@ -71,6 +71,7 @@
     box-sizing: border-box;
     width: 330px;
     flex-direction: column;
+    transition: 500ms ease-in;
     @include media-laptop-small {
         width: 270px;
     }

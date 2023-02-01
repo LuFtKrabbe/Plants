@@ -50,7 +50,8 @@ p {
   background-color: #E06733 !important;
   color: #FFFFFF !important;
 }
-.button-type1:focus {
+
+.button-service-focus {
   background-color: #E06733 !important;
   color: #FFFFFF !important;
 }
@@ -541,6 +542,7 @@ p {
   box-sizing: border-box;
   width: 330px;
   flex-direction: column;
+  transition: 500ms ease-in;
 }
 @media (max-width: 1024px) {
   .service-card {

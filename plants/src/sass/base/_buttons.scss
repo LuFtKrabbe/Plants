@@ -8,8 +8,9 @@
         color: $light-color !important;
         @extend %transition;
     }
-    &:focus {
-        background-color: $primary-color !important;
-        color: $light-color !important;
-    } 
+}
+
+.button-service-focus {
+    background-color: $primary-color !important;
+    color: $light-color !important;
 }
