@@ -1,9 +1,8 @@
 console.log(`Self-estimation of work:\n
-Score: 85 / 85\n
-- [x] The tablet layout is completely according to the sketch (24/24);\n
-- [x] The mobile layout is completely according to the sketch (24/24);\n
-- [x] There is no deformation of the sketch and horizontal scroll-line (15/15);\n
-- [x] Adaptive menu has been added (22/22).`);
+Score: 125 / 100\n
+- [x] The images' focus changes due to the active tags (50/50);\n
+- [x] All drop-down lists have been realized (50/50);\n
+- [x] Choose any city you want (25/25).`);
 
 function dropHamburgerMenu() {
     document.getElementById("hamburger").classList.toggle("change-cross");
