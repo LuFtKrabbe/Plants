@@ -27,9 +27,9 @@ let tagPlanting = document.getElementsByName("tag-planting")[0];
 serviceBlockButton.onclick = function(event) {
     let allCards = document.getElementsByClassName("service-card");
     let selectedCards = [];
-    let activeTags = 0;
     
     function countActiveTags() {
+        let activeTags = 0;
         for (let tag of serviceBlockButton.children) {
             if (tag.matches(".button-service-focus")) {activeTags++}
         }
@@ -39,35 +39,20 @@ serviceBlockButton.onclick = function(event) {
     function isTagActive(i) {
         return serviceBlockButton.children[i].matches(".button-service-focus");
     }
-    /*
-    console.log(isTagActive(0));
-    console.log(isTagActive(1));
-    console.log(isTagActive(2));
-    console.log(countActiveTags());
-    */
+
     if (event.target.name == 'tag-garden') {
-        if (!((activeTags == 2) && !(isTagActive(0)))) {
+        if (!((countActiveTags() == 2) && !(isTagActive(0)))) {
             tagGarden.classList.toggle("button-service-focus");
         }
     }
     if (event.target.name == 'tag-lawn') {
-        if (!((activeTags == 2) && !(isTagActive(1)))) {
+        if (!((countActiveTags() == 2) && !(isTagActive(1)))) {
             tagLawn.classList.toggle("button-service-focus");
         }
     }
     if (event.target.name == 'tag-planting') {
-        if (!((activeTags == 2) && !(isTagActive(2)))) {
+        if (!((countActiveTags() == 2) && !(isTagActive(2)))) {
             tagPlanting.classList.toggle("button-service-focus");
-        }
-    }
-    
-    countActiveTags();
-    
-    for (let card of allCards) {
-        if (activeTags > 0) {
-            (card.style.filter = 'blur(2px)')
-        } else {
-            (card.style.filter = 'blur(0px)')
         }
     }
 
@@ -81,5 +66,89 @@ serviceBlockButton.onclick = function(event) {
         selectedCards.push(...document.getElementsByName("planting"));
     }
 
-    for (let card of selectedCards) {card.style.filter = 'blur(0px)'}
+    for (let card of allCards) {
+        if (selectedCards.includes(card) || (selectedCards.length == 0)) {
+            (card.style.filter = 'blur(0px)');
+        } else {
+            (card.style.filter = 'blur(2px)');
+        }
+    }
+}
+
+let pricesBlockButton = document.getElementsByClassName('prices-block-button')[0];
+let buttonBasics = document.getElementsByName("basics")[0];
+let buttonStandard = document.getElementsByName("standard")[0];
+let buttonProCare = document.getElementsByName("pro-care")[0];
+
+pricesBlockButton.onclick = function(event) {
+
+    function isTagActive(i) {
+        return pricesBlockButton.children[i].matches(".button-price-focus");
+    }
+    console.log(event.target);
+
+    if (event.target.attributes.name.value == 'basics') {
+        buttonBasics.classList.toggle("button-price-focus");
+        if (isTagActive(0)) {
+            buttonBasics.children[1].style.visibility = 'visible';
+        } else {
+            buttonBasics.children[1].style.visibility = 'hidden';
+        }
+        if (isTagActive(1)) {
+            buttonStandard.classList.toggle("button-price-focus")
+            buttonStandard.children[1].style.visibility = 'hidden';
+        }
+        if (isTagActive(2)) {
+            buttonProCare.classList.toggle("button-price-focus")
+            buttonProCare.children[1].style.visibility = 'hidden';
+        }
+    }
+
+    if (event.target.attributes.name.nodeValue == 'standard') {
+        buttonStandard.classList.toggle("button-price-focus");
+        if (isTagActive(0)) {
+            buttonBasics.classList.toggle("button-price-focus");
+            buttonBasics.children[1].style.visibility = 'hidden';
+        }
+        if (isTagActive(1)) {
+            buttonStandard.children[1].style.visibility = 'visible';
+        } else {
+            buttonStandard.children[1].style.visibility = 'hidden';
+        }
+        if (isTagActive(2)) {
+            buttonProCare.classList.toggle("button-price-focus");
+            buttonProCare.children[1].style.visibility = 'hidden';
+        }
+    }
+
+    if (event.target.attributes.name.nodeValue == 'pro-care') {
+        buttonProCare.classList.toggle("button-price-focus");
+        if (isTagActive(0)) {
+            buttonBasics.classList.toggle("button-price-focus")
+            buttonBasics.children[1].style.visibility = 'hidden';
+        }
+        if (isTagActive(1)) {
+            buttonStandard.classList.toggle("button-price-focus")
+            buttonStandard.children[1].style.visibility = 'hidden';
+        }
+        if (isTagActive(2)) {
+            buttonProCare.children[1].style.visibility = 'visible';
+        } else {
+            buttonProCare.children[1].style.visibility = 'hidden';
+        }
+    }
+
+    if (isTagActive(0) || isTagActive(1) || isTagActive(2)) {
+        pricesBlockButton.style.height = '320px';
+        pricesBlockButton.style.paddingTop = '20px';
+        pricesBlockButton.style.paddingBottom = '20px';
+    } else {
+        pricesBlockButton.style.height = '284px';
+        pricesBlockButton.style.paddingTop = '40px';
+        pricesBlockButton.style.paddingBottom = '40px';
+    }
+}
+
+function toContacts() {
+    document.location='#contacts';
 }

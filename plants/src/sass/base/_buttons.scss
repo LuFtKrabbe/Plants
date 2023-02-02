@@ -10,7 +10,37 @@
     }
 }
 
+.button-type2 {
+    background-color: $bg-color;
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    cursor: pointer;
+    &:hover {
+        background-color: $primary-color-20;
+        @extend %transition;
+    }
+}
+
 .button-service-focus {
     background-color: $primary-color !important;
     color: $light-color !important;
+}
+
+.button-type3 {
+    font-family: 'Inter', sans-serif;
+    @include font(1.4rem, 2.0rem, 700, normal);
+    @include button_size (86px, 25px, 10px);
+    background-color: $light-color;
+    color: $heading-color;
+    border: none;
+    cursor: pointer;
+    @include media-mobile-big {
+        @include font(1.2rem, 1.5rem, 700, normal);
+        @include button_size (60px, 20px, 5px);
+    }    
+    &:hover {
+        background-color: $primary-color !important;
+        color: $light-color !important;
+        @extend %transition;
+    }
 }

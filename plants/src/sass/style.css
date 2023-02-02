@@ -1,4 +1,4 @@
-.prices-button:hover, .header-navigation ul li:hover, .header-navigation, .header-logo:hover, .header-overlay, .change-cross, .hamburger, .button-type1:hover {
+.prices-button div:first-child::after, .prices-button:hover, .prices-button, .prices-block-button, .header-navigation ul li:hover, .header-navigation, .header-logo:hover, .header-overlay, .change-cross, .hamburger, .button-type3:hover, .button-type2:hover, .button-type1:hover {
   transition: all 300ms ease-in-out;
 }
 
@@ -51,7 +51,47 @@ p {
   color: #FFFFFF !important;
 }
 
+.button-type2 {
+  background-color: #EDF2EC;
+  color: #E06733;
+  border: solid 1px #E06733;
+  cursor: pointer;
+}
+.button-type2:hover {
+  background-color: rgba(224, 103, 51, 0.1254901961);
+}
+
 .button-service-focus {
+  background-color: #E06733 !important;
+  color: #FFFFFF !important;
+}
+
+.button-type3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  width: 86px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #717171;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 380px) {
+  .button-type3 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+  }
+}
+.button-type3:hover {
   background-color: #E06733 !important;
   color: #FFFFFF !important;
 }
@@ -491,7 +531,7 @@ p {
   flex-wrap: wrap;
 }
 
-.service .button-type1 {
+.service .button-type2 {
   box-sizing: border-box;
   font-family: "Inika", serif;
   font-size: 2rem;
@@ -504,7 +544,7 @@ p {
   margin: 9px 38px 9px 0;
 }
 @media (max-width: 380px) {
-  .service .button-type1 {
+  .service .button-type2 {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 400;
@@ -814,14 +854,12 @@ p {
   line-height: 2rem;
   font-weight: 700;
   font-style: normal;
-  width: 250px;
+  width: 170px;
   height: 50px;
   border-radius: 20px;
   position: relative;
-  text-align: left;
-  border: none;
   background-color: #EDF2EC;
-  padding: 0 0 0 40px;
+  padding: 0 40px 0 40px;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -835,22 +873,100 @@ p {
     line-height: 2rem;
     font-weight: 700;
     font-style: normal;
-    width: 180px;
+    width: 100px;
     height: 50px;
     border-radius: 20px;
-    padding: 0 0 0 30px;
+    padding: 0 30px 0 30px;
   }
 }
 .prices-button:hover {
   box-shadow: #C1E698 0 0 10px 5px;
 }
-.prices-button::after {
-  position: absolute;
-  right: 35px;
+.prices-button div:first-child::after {
   content: url(../../img/icons/accordion_btn_light.svg);
+  position: absolute;
+  margin: 2px 0 0 0;
+  right: 35px;
   width: 16px;
   height: 16px;
+}
+
+.label {
+  margin: 15px 0 12px 0;
+}
+
+.button-price-focus {
+  height: 154px;
+  background-color: #D6E7D2;
+}
+.button-price-focus div:first-child::after {
+  content: url(../../img/icons/accordion_btn.svg);
+  transform: rotate(180deg);
+}
+
+.price-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  visibility: hidden;
+}
+.price-content p:first-child {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  padding: 6px 0 6px 0;
+  border-top: solid 1px #AEA1A1;
+  color: #717171;
   margin: 0;
+}
+@media (max-width: 380px) {
+  .price-content p:first-child {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+.price-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 0 6px 0;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+}
+@media (max-width: 380px) {
+  .price-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+.price-content p span:first-child {
+  font-weight: 700;
+  color: #E06733;
+}
+.price-content p span:last-child {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #E06733;
+}
+@media (max-width: 380px) {
+  .price-content p span:last-child {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+    font-style: normal;
+  }
 }
 
 .about {

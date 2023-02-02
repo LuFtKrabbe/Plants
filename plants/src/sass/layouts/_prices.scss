@@ -100,6 +100,7 @@
     height: 284px;
     width: 332px;
     padding: 34px 0 34px 0;
+    @extend %transition;
     @include media-mobile-big {
         padding: 28px 0 28px 0;
         height: 236px;
@@ -110,31 +111,82 @@
 .prices-button {
     font-family: 'Inter', sans-serif;
     @include font(2.0rem, 2.0rem, 700, normal);
-    @include button_size (250px, 50px, 20px);
+    @include button_size (170px, 50px, 20px);
     position: relative;
-    text-align: left;
-    border: none;
     background-color: $bg-color;
-    padding: 0 0 0 40px;
+    padding: 0 40px 0 40px;
     cursor: pointer;
+    @extend %transition;
     @include media-tablet {
         margin: 0;
     }
     @include media-mobile-big {
         @include font(1.5rem, 2.0rem, 700, normal);
-        @include button_size (180px, 50px, 20px);
-        padding: 0 0 0 30px;
+        @include button_size (100px, 50px, 20px);
+        padding: 0 30px 0 30px;
     }    
     &:hover {
         box-shadow: $active-selector-color (0 0 10px 5px);
         @extend %transition;
     }
-    &::after {
-        position: absolute;
-        right: 35px;
+    div:first-child::after {
         content: url(../../img/icons/accordion_btn_light.svg);
+        position: absolute;
+        margin: 2px 0 0 0;
+        right: 35px;
         width: 16px;
         height: 16px;
+        @extend %transition;
+    }
+}
+
+.label {
+    margin: 15px 0 12px 0;
+}
+
+.button-price-focus {
+    height: 154px;
+    background-color: $active-price-button;
+    div:first-child::after {
+        content: url(../../img/icons/accordion_btn.svg);
+        transform: rotate(180deg);
+    }
+}
+
+.price-content {
+    @include flex (flex, flex-start, space-around, nowrap);
+    flex-direction: column;
+    visibility: hidden;
+    & p:first-child {
+        @include font(1.0rem, 1.0rem, 300, normal);
+        padding: 6px 0 6px 0;
+        border-top: solid 1px $line-color;
+        color: $heading-color;
         margin: 0;
+        @include media-mobile-big {
+            @include font(0.8rem, 1.0rem, 300, normal);
+        } 
+    }
+    & p {
+        font-family: 'Inter', sans-serif;
+        @include font(1.2rem, 2.0rem, 400, normal);
+        padding: 0 0 6px 0;
+        color: $dark-color;
+        text-align: left;
+        margin: 0;
+        @include media-mobile-big {
+            @include font(1.0rem, 1.5rem, 400, normal);
+        } 
+        & span:first-child {
+            font-weight: 700;
+            color: $primary-color;
+        }
+        & span:last-child {
+            @include font(1.6rem, 2.0rem, 700, normal);
+            color: $primary-color;
+            @include media-mobile-big {
+                @include font(1.4rem, 1.6rem, 700, normal);
+            } 
+        }
     }
 }
