@@ -44,3 +44,10 @@
         @extend %transition;
     }
 }
+
+.button-type4 {
+    background-color: $bg-color;
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    cursor: pointer;
+}

@@ -1,13 +1,13 @@
+//abstract
 @import "abstract/constants";
 @import "abstract/placeholder";
 @import "abstract/mixins";
+@import "abstract/keyframes";
 
+//base
 @import "base/base";
 @import "base/buttons";
 @import "base/hamburger";
-
-// Components
-@import "components/contacts";
 
 //layouts
 @import "layouts/wrapper";

@@ -145,6 +145,7 @@
 }
 
 .button-price-focus {
+    overflow: hidden;
     height: 154px;
     background-color: $active-price-button;
     div:first-child::after {

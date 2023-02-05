@@ -42,7 +42,7 @@
             <h1>We grow <span>plants</span> and give you oxygen</h1> 
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             <form class="welcome-button">
-              <button class="button-type1" type="button">LEARN MORE</button>
+              <button class="button-type1" type="button" onclick="toService()">LEARN MORE</button>
             </form>
           </div>
         </div>
@@ -148,7 +148,7 @@
           <div class="prices-content">
             <p>Our&nbsp;best <span>gardeners</span>&nbsp;are<br> ready to help you</p>
             <form>
-              <button type="button" class="button-type1">Contact us</button>
+              <button type="button" class="button-type1" onclick="toContacts()">Contact us</button>
             </form>
             <img src="./img/general/leafs_price.png" alt="leafs">
           </div>
@@ -159,16 +159,39 @@
           <img src="./img/general/contact_woman.png" alt="women">
           <div class="contacts-content">
             <h2>Contact us</h2>
-            <div class="contacts-city">
-              <select> 
-                <option value="0">City</option>
-                <option value="1">California</option>
-                <option value="2">New York</option>
-                <option value="3">Philadelphia</option>
-              </select>
+            <div class="contacts-dropdown">
+              <div class="contacts-city" onclick="openCity()">
+                <p>City</p>
+              </div>
+              <ul class="contacts-city-select">
+                <li value="0" onclick="cityCanandaigua()">Canandaigua, NY</li>
+                <li value="1" onclick="cityNewYork()">New York City</li>
+                <li value="2" onclick="cityYonkers()">Yonkers, NY</li>
+                <li value="3" onclick="citySherrill()">Sherrill, NY</li>
+              </ul>
+              <div class="contacts-office">
+                <table class="contacts-office-table">
+                  <tbody>
+                    <tr>
+                      <td>City:</td>
+                      <td>Canandaigua, NY</td>
+                    </tr>
+                    <tr>
+                      <td>Phone:</td>
+                      <td>+1 585 393 0001</td>
+                    </tr>
+                    <tr>
+                      <td>Office address:</td>
+                      <td>151 Charlotte Street</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="button-type4" onclick="startCalling()">Call us</button>
+              </div>
             </div>
           </div>
         </div>
+        <div id="contacts-overlay"></div>
       </section>
     </main>
     <footer class="footer">
