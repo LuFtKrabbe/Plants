@@ -216,6 +216,10 @@ function startCalling() {
     document.getElementsByClassName('contacts-office')[0].classList.toggle("calling");
     if (document.getElementsByClassName('contacts-office')[0].matches(".calling")) {
         document.getElementsByClassName('contacts-office')[0].children[1].innerText = 'Stop calling...';
+        if (tableOffice.children[0].children[1].innerText == "Canandaigua, NY") {window.location.href = "tel:+15853930001"}
+        if (tableOffice.children[0].children[1].innerText == "New York City") {window.location.href = "tel:+12124560002"}
+        if (tableOffice.children[0].children[1].innerText == "Yonkers, NY") {window.location.href = "tel:+19146780003"}
+        if (tableOffice.children[0].children[1].innerText == "Sherrill, NY") {window.location.href = "tel:+13159080004"}
     } else {
         document.getElementsByClassName('contacts-office')[0].children[1].innerText = 'Call us';
     }
